@@ -66,7 +66,7 @@ MIDDLEWARE = [
     'django_otp.middleware.OTPMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-
+    'allauth.account.middleware.AccountMiddleware',  # Add this line
 ]
 OTP_TOTP_ISSUER = 'Quizoo'
 ROOT_URLCONF = 'quizoo.urls'
@@ -169,12 +169,12 @@ STATIC_ROOT = '/vol/web/static/'
 MEDIA_ROOT = '/vol/web/media/'
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST_USER = os.environ.get(
-    "EMAIL_HOST_USER", 'ctrlalteliteshi2020@gmail.com')
+    "EMAIL_HOST_USER", 'zakariyahabdulaleem10@gmail.com')
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 # Put your password here and ensure no double verification on gmail account & less secured apps allowed
-EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_PASSWORD", 'passwordispassword')
+EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_PASSWORD", 'Zakariyah@100')
 CKEDITOR_UPLOAD_PATH = "uploads/"
 CKEDITOR_ALLOW_NONIMAGE_FILES = False
 CKEDITOR_THUMBNAIL_SIZE = 'pillow'
